@@ -1,2 +1,2 @@
 # sayisal-loto-project
-demo loto
+spring boot porject
