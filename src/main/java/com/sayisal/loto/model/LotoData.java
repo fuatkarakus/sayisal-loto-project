@@ -2,7 +2,9 @@ package com.sayisal.loto.model;
 
 import java.util.ArrayList;
 
-@lombok.Data
+import lombok.Data;
+
+@Data
 public class LotoData {
 
     public String oid;
@@ -23,7 +25,7 @@ public class LotoData {
 
     public ArrayList<BilenKisiler> bilenKisiler;
 
-    public  String buyukIkrKazananIlIlceler;
+    public ArrayList<BuyukIkrKazananIlIlceler> buyukIkrKazananIlIlceler;
 
     public int kibrisHasilati;
 
