@@ -1,2 +1,2 @@
 # sayisal-loto-project
-spring boot porject
+spring boot project
