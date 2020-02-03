@@ -1,7 +1,6 @@
 package com.sayisal.loto.controller;
 
-import java.util.ArrayList;
-
+import com.sayisal.loto.service.LotoService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,7 +8,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.sayisal.loto.service.LotoService;
+import java.util.ArrayList;
 
 @RestController
 @RequestMapping("/Cekilis")
@@ -21,7 +20,7 @@ public class MilliPiyangoController {
     LotoService lotoService;
 
     @GetMapping("/insertAll")
-    public String insertAllLotoSonuc() throws Exception{
+    public String insertAllLotoSonuc(){
         ArrayList<String> dates = lotoService.getOldCekilisTarihleri();
 
         for(String date : dates){

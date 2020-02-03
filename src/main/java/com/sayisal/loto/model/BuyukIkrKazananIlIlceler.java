@@ -5,8 +5,8 @@ import lombok.Data;
 @Data
 public class BuyukIkrKazananIlIlceler {
 
-	String il ; 
+	String il;
 	String ilView;
-	String  ilce;
+	String ilce;
 	String ilceView;
 }
